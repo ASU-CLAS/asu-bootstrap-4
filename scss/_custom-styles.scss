@@ -11,3 +11,21 @@
 //    box-shadow: 3px 3px theme-color-level($color, -3);
 //  }
 //}
+
+html {
+  font-size: 1em;
+}
+a {
+  border-bottom: 1px dotted #8C1D40;
+  text-decoration: none;
+}
+a:focus {
+  outline: 2px solid #4D90FE;
+  -webkit-box-shadow: 0px 0px 5px #4D90FE;
+  box-shadow: 0px 0px 5px #4D90FE;
+}
+a:hover {
+  color: #d23153;
+  text-decoration: none;
+  border-bottom: 1px dotted #d23153;
+}

@@ -24,9 +24,14 @@ $warning: #FF7F32;
 //$danger: #ff293a;
 //$light: #dfe6ee;
 //$dark: #0f1319;
+$font-family-sans-serif : "Roboto", "Helvetica Neue", Arial, sans-serif;
 
 
 // Adding (!) an additional theme color (ex. classes btn-cool, bg-cool)
 $theme-colors: (
-  "blue": #00A3E0
+  "blue": #0079b0
 );
+$link-color:                #8C1D40;
+$link-decoration:           none;
+$link-hover-color:          #d23153;
+$link-hover-decoration:     none;

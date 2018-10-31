@@ -27,12 +27,10 @@ gulp.task('build-theme', function() {
     .pipe(gulp.dest('css/'))
 });
 
-gulp.task('watch', ['build-theme'], function() {
+gulp.task('watch', gulp.series('build-theme', function() {
   gulp.watch(['scss/*.scss'], ['build-theme']);
-});
+}));
 
-gulp.task('default', ['build-theme'], function() {
-});
-
-
-
+gulp.task('default', gulp.series('build-theme', function(done) {
+  done();
+}));
